@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    overflow: hidden; 
+    margin: 0;       
+  }
+  
+  .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    cursor: pointer;
+  }
+  
+  .particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: aqua;
+    pointer-events: all; 
+    transition: opacity 0.3s ease-out; 
+  }
+  
+  .hide {
+    opacity: 0; 
+  }
